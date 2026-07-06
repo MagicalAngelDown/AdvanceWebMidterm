@@ -8,11 +8,17 @@
     --poke-border: #dee2e6;
 }
 
-body {
-    background: linear-gradient(135deg, #f8f9fa 0%, #edf6f9 100%);
-    color: #212529;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
+body{
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .navbar {
@@ -44,11 +50,20 @@ body {
     transform: translateY(-1px);
 }
 
+main,
 main.container {
-    background: rgba(255, 255, 255, 0.82);
-    border-radius: 18px;
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
     padding: 2rem;
+    background: rgba(230, 205, 205, 0.9);
+    border-radius: 18px;
     box-shadow: 0 10px 28px rgba(29, 53, 87, 0.12);
+    text-align: center;
+}
+
+main ul {
+    display: inline-block;
+    text-align: left;
 }
 
 h1,
@@ -219,6 +234,39 @@ p {
 
 .type-fairy {
     background-color: #ffafcc;
+    color: #212529;
+}
+
+.type-btn {
+    font-weight: 700;
+    margin-right: 0.35rem;
+    margin-bottom: 0.5rem;
+}
+
+.selected-type {
+    border-color: transparent;
+    color: #ffffff;
+}
+
+.selected-type:hover,
+.selected-type:focus {
+    filter: brightness(0.95);
+    color: #ffffff;
+}
+
+.selected-type.type-electric,
+.selected-type.type-normal,
+.selected-type.type-flying,
+.selected-type.type-ice,
+.selected-type.type-fairy {
+    color: #212529;
+}
+
+.selected-type.type-electric:hover,
+.selected-type.type-normal:hover,
+.selected-type.type-flying:hover,
+.selected-type.type-ice:hover,
+.selected-type.type-fairy:hover {
     color: #212529;
 }
 

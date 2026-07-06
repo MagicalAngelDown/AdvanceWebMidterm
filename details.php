@@ -2,7 +2,7 @@
 $pageTitle = "Pokémon Details";
 include "includes/header.php";
 include "includes/nav.php";
-include "includes/functions.php";
+include "includes/function.php";
 
 $name = $_GET["name"] ?? "";
 $pokemon = null;

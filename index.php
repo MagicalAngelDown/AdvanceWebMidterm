@@ -2,7 +2,7 @@
 $pageTitle = "About Poke AI";
 include "includes/header.php";
 include "includes/nav.php";
-include "includes/functions.php";
+include "includes/function.php";
 ?>
     <main>
         <h1> Welcome to Poke AI </h1>

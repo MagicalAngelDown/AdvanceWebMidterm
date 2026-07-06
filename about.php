@@ -2,7 +2,7 @@
 $pageTitle = "About Project";
 include "includes/header.php";
 include "includes/nav.php";
-include "includes/functions.php";
+include "includes/function.php";
 ?>
 
     <main class="w3-container">
